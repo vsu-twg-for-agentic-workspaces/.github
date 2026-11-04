@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="1100" height="240">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hzBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#083D26" />
+      <stop offset="65%" stop-color="#0D5C3A" />
+      <stop offset="100%" stop-color="#072F1D" />
+    </linearGradient>
+
+    <!-- Gold Gradients -->
+    <linearGradient id="hzGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="40%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="barGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#0D5C3A" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="hzGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Container with rounded border -->
+  <rect x="2" y="2" width="1096" height="236" rx="16" fill="url(#hzBg)" stroke="#D97706" stroke-width="2.5" />
+
+  <!-- Subtle Diamond Watermark Texture on Right -->
+  <g opacity="0.06" stroke="#FFFFFF" stroke-width="1.5" fill="none">
+    <path d="M 850 0 L 920 70 L 850 140 L 780 70 Z" />
+    <path d="M 990 0 L 1060 70 L 990 140 L 920 70 Z" />
+    <path d="M 920 70 L 990 140 L 920 210 L 850 140 Z" />
+    <path d="M 1060 70 L 1130 140 L 1060 210 L 990 140 Z" />
+    <path d="M 850 140 L 920 210 L 850 280 L 780 210 Z" />
+    <path d="M 990 140 L 1060 210 L 990 280 L 920 210 Z" />
+  </g>
+
+  <!-- Left Emblem (Scales perfectly) -->
+  <g transform="translate(40, 20)">
+    <!-- Base Circle -->
+    <circle cx="100" cy="100" r="94" fill="#083D26" stroke="#D97706" stroke-width="3" />
+    <circle cx="100" cy="100" r="88" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4 3" opacity="0.7" />
+
+    <!-- Orbits -->
+    <ellipse cx="100" cy="100" rx="66" ry="28" fill="none" stroke="#F59E0B" stroke-width="1.6" transform="rotate(-30 100 100)" opacity="0.8" />
+    <ellipse cx="100" cy="100" rx="66" ry="28" fill="none" stroke="#F59E0B" stroke-width="1.6" transform="rotate(30 100 100)" opacity="0.8" />
+
+    <!-- Nodes -->
+    <circle cx="148" cy="70" r="5" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="148" cy="130" r="5" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="52" cy="130" r="5" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="52" cy="70" r="5" fill="#FBBF24" stroke="#FFFFFF" stroke-width="1.5" />
+
+    <!-- Obelisks Core -->
+    <rect x="82" y="138" width="36" height="4" rx="1" fill="url(#hzGold)" />
+    <polygon points="90,138 92,62 95,54 96,138" fill="url(#hzGold)" />
+    <polygon points="104,138 105,62 108,54 110,138" fill="url(#hzGold)" />
+
+    <!-- Flame / Guiding Spark -->
+    <circle cx="100" cy="48" r="4.5" fill="#FFFFFF" filter="url(#hzGlow)" />
+  </g>
+
+  <!-- Vertical Divider Separator -->
+  <line x1="264" y1="36" x2="264" y2="204" stroke="#D97706" stroke-width="2" stroke-opacity="0.8" />
+
+  <!-- Typography Lockup -->
+  <g transform="translate(290, 0)">
+    <!-- Top Super-Header: Institutional Parent -->
+    <text x="0" y="62" font-family="'Montserrat', 'Trajan Sans', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FBBF24" letter-spacing="4.5">
+      VISAYAS STATE UNIVERSITY
+    </text>
+
+    <!-- Main Organization Title -->
+    <text x="0" y="112" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" letter-spacing="1.2">
+      TECHNICAL WORKING GROUP
+    </text>
+
+    <text x="0" y="152" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#34D399" letter-spacing="1">
+      FOR AGENTIC WORKSPACES
+    </text>
+
+    <!-- Accent Underline -->
+    <rect x="0" y="168" width="460" height="3" fill="url(#barGold)" rx="1.5" />
+
+    <!-- Subtitle / Mission Tagline -->
+    <text x="0" y="196" font-family="'Roboto', 'Inter', 'Segoe UI', sans-serif" font-size="14.5" font-weight="400" fill="#E2E8F0" letter-spacing="0.4">
+      Advancing AI Agents, Orchestrated Automation, and Scalable Workflows for the University System
+    </text>
+  </g>
+</svg>

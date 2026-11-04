@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#083D26" />
+      <stop offset="60%" stop-color="#0D5C3A" />
+      <stop offset="100%" stop-color="#052718" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#FDE68A" />
+    </linearGradient>
+
+    <linearGradient id="nodeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Protective Base Circle -->
+  <circle cx="256" cy="256" r="248" fill="url(#bgGrad)" stroke="#D97706" stroke-width="4" filter="url(#shadow)" />
+
+  <!-- Outer Decorative Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6" />
+
+  <!-- Geometric Circuit Accents (Agentic Network Grid) -->
+  <g opacity="0.22" stroke="#FBBF24" stroke-width="1.5" fill="none">
+    <path d="M 120 256 A 136 136 0 0 1 392 256 A 136 136 0 0 1 120 256" />
+    <path d="M 76 256 H 120 M 392 256 H 436" />
+    <path d="M 256 76 V 120 M 256 392 V 436" />
+    <circle cx="256" cy="76" r="3" fill="#FBBF24" />
+    <circle cx="256" cy="436" r="3" fill="#FBBF24" />
+    <circle cx="76" cy="256" r="3" fill="#FBBF24" />
+    <circle cx="436" cy="256" r="3" fill="#FBBF24" />
+  </g>
+
+  <!-- Inner Shield / Hex Core -->
+  <polygon points="256,58 426,156 426,356 256,454 86,356 86,156" fill="#083D26" stroke="#D97706" stroke-width="2.5" opacity="0.9" />
+
+  <!-- Elliptical Agentic Workflow Orbits -->
+  <!-- Orbit 1 -->
+  <ellipse cx="256" cy="256" rx="160" ry="68" fill="none" stroke="#F59E0B" stroke-width="2" transform="rotate(-30 256 256)" opacity="0.75" />
+  <!-- Orbit 2 -->
+  <ellipse cx="256" cy="256" rx="160" ry="68" fill="none" stroke="#F59E0B" stroke-width="2" transform="rotate(30 256 256)" opacity="0.75" />
+
+  <!-- Agentic Workflow Nodes (Perceive, Reason, Act, Reflect) -->
+  <g filter="url(#glow)">
+    <!-- Top-Right Node (Reason) -->
+    <circle cx="372" cy="180" r="11" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="372" cy="180" r="4" fill="#083D26" />
+
+    <!-- Bottom-Right Node (Act) -->
+    <circle cx="372" cy="332" r="11" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="372" cy="332" r="4" fill="#083D26" />
+
+    <!-- Bottom-Left Node (Reflect) -->
+    <circle cx="140" cy="332" r="11" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="140" cy="332" r="4" fill="#083D26" />
+
+    <!-- Top-Left Node (Perceive) -->
+    <circle cx="140" cy="180" r="11" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="140" cy="180" r="4" fill="#083D26" />
+  </g>
+
+  <!-- Central Monument / Beacon of Truth & Intelligence -->
+  <!-- Stylized Twin Obelisks of VSU merged with Digital Spire -->
+  <g id="central-beacon">
+    <!-- Base Platform (3 tiers) -->
+    <rect x="206" y="342" width="100" height="8" rx="2" fill="url(#goldGrad)" />
+    <rect x="218" y="334" width="76" height="8" rx="1" fill="#FDE68A" />
+    <rect x="232" y="326" width="48" height="8" rx="1" fill="url(#goldGrad)" />
+
+    <!-- Left Obelisk (Nature & Agriculture / Human Intuition) -->
+    <polygon points="234,326 238,154 246,140 248,326" fill="url(#goldLight)" />
+    <polygon points="248,326 246,140 250,154 250,326" fill="#D97706" />
+
+    <!-- Right Obelisk (Science & Technology / Agentic Machine Intelligence) -->
+    <polygon points="264,326 262,154 266,140 278,326" fill="url(#goldLight)" />
+    <polygon points="262,326 262,154 266,140 264,326" fill="#D97706" />
+
+    <!-- Central SFT Spark / Guiding Flame of Truth -->
+    <path d="M 256 122 Q 262 136 266 148 Q 256 156 256 166 Q 256 156 246 148 Q 250 136 256 122 Z" fill="#FFFFFF" filter="url(#glow)" />
+    <circle cx="256" cy="144" r="3.5" fill="#F59E0B" />
+  </g>
+
+  <!-- Synaptic Connectors from Core to Nodes -->
+  <g stroke="#34D399" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.7">
+    <line x1="256" y1="166" x2="372" y2="180" />
+    <line x1="256" y1="256" x2="372" y2="332" />
+    <line x1="256" y1="256" x2="140" y2="332" />
+    <line x1="256" y1="166" x2="140" y2="180" />
+  </g>
+
+  <!-- Typography Arc / Text Labels -->
+  <!-- Top Circular Text: VISAYAS STATE UNIVERSITY -->
+  <path id="textArcTop" d="M 100 256 A 156 156 0 0 1 412 256" fill="none" />
+  <text font-family="'Montserrat', 'Trajan Sans', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" letter-spacing="4.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      VISAYAS STATE UNIVERSITY
+    </textPath>
+  </text>
+
+  <!-- Bottom Circular Text: TWG • AGENTIC WORKSPACES -->
+  <path id="textArcBottom" d="M 412 256 A 156 156 0 0 1 100 256" fill="none" />
+  <text font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-size="14.5" font-weight="700" fill="#FBBF24" letter-spacing="3.8">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      TWG • AGENTIC WORKSPACES
+    </textPath>
+  </text>
+
+  <!-- Bottom Milestone Accent -->
+  <circle cx="256" cy="422" r="3" fill="#D97706" />
+</svg>
