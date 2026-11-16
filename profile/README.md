@@ -15,7 +15,7 @@
   <br/><br/>
 
   <p>
-    <a href="https://www.vsu.edu.ph"><img src="https://img.shields.io/badge/VSU-Official_Portal-0D5C3A?style=for-the-badge&logo=google-earth&logoColor=white" alt="VSU Portal" /></a>
+    <a href="https://www.vsu.edu.ph"><img src="https://img.shields.io/badge/VSU-Official_Portal-146939?style=for-the-badge&logo=google-earth&logoColor=white" alt="VSU Portal" /></a>
     <a href="https://brandbook.vsu.edu.ph"><img src="https://img.shields.io/badge/Brand_Standard-VSU_Brand_Book-123F8C?style=for-the-badge&logo=shield&logoColor=white" alt="VSU Brand Standard" /></a>
     <a href="https://github.com/vsu-twg-for-agentic-workspaces"><img src="https://img.shields.io/badge/Organization-Agentic_Workspaces-123F8C?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Org" /></a>
     <a href="#%EF%B8%8F-ai-safety--governance"><img src="https://img.shields.io/badge/Data_Privacy-RA_10173_Compliant-0284C7?style=for-the-badge&logo=securityscorecard&logoColor=white" alt="RA 10173" /></a>
@@ -79,11 +79,12 @@ Grounded in VSU's core institutional values of **Relevance, Integrity, Truth, an
 | Initiative | Scope | Target audience | Status |
 |---|---|---|---|
 | **Capacity Building in Using AI Agents and Workflows in the University** | 2-day hands-on training design, lab handouts, slide decks, and participant rubrics | Faculty, non-technical staff | 🟢 Active training |
-| **Participant repository template** | One-click starter repository with prompts and lab exercises for workshop learners | Workshop participants | 🟢 Active template |
+| [**`workshop-participant-materials`**](https://github.com/vsu-twg-for-agentic-workspaces/workshop-participant-materials) | Participant handouts, worksheets, reference cards, printable PDFs, and the Pre-Workshop Kit | Workshop participants | 🟢 Public |
+| [**`participant-repo-template`**](https://github.com/vsu-twg-for-agentic-workspaces/participant-repo-template) | One-click starter repository with prompts and lab exercises for workshop learners | Workshop participants | 🟢 Active template |
 | [**`.github`**](https://github.com/vsu-twg-for-agentic-workspaces/.github) | Organization profile, community health files, issue templates, and shared guidelines | Public & members | 🟢 Maintained |
 
 > [!NOTE]
-> Training repositories stay private to TWG members and enrolled participants while materials are in development. Members see the full repository list and contributor workflow in the members-only view of this page.
+> Participant materials are public: anyone can open the handouts, worksheets, and Pre-Workshop Kit in [`workshop-participant-materials`](https://github.com/vsu-twg-for-agentic-workspaces/workshop-participant-materials). The facilitators' working files (training design, facilitator guides, and drafts) stay private to TWG members. Members see the full repository list and contributor workflow in the members-only view of this page.
 
 ---
 
@@ -125,7 +126,7 @@ The TWG logo, **"Branching Quadrant,"** follows the VSU Brand Book's centennial 
 | **TWG Silver** | Workspace tiles | `#C4CBD6` |
 | **White** | Branch, nodes, and spark | `#FFFFFF` |
 
-Training materials continue to use the official VSU **Green and Gold** palette (`#0D5C3A`, `#D97706`) from [brandbook.vsu.edu.ph](https://brandbook.vsu.edu.ph).
+Training materials use the official VSU **green and gold** colors from the [VSU Brand Book](https://brandbook.vsu.edu.ph): **Green** `#146939` and **Golden Yellow** `#FDC530` (with the Brand Book's lighter and darker shades where needed). Because the materials are for workshop use and do not represent the university in an official capacity, they may also use the TWG logo colors above. Official VSU marks (seal, brand logo, text logo) are always used exactly as the Brand Book specifies.
 
 Logo files are in [`profile/assets/`](assets/):
 - **`vsu-twg-logo.svg` / `.png`** — Primary logo (blue, silver, and white)
